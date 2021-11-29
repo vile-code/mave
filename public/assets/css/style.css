@@ -1,0 +1,376 @@
+/*======= Google Font =====*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lexend+Deca&family=Livvic:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Style all font awesome icons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+.fa-instagram {
+	background: #125688;
+	color: white;
+  }
+
+  .fa-youtube {
+	background: #bb0000;
+	color: white;
+  }
+
+/* VENTANA MODAL */
+
+.pop-up{
+    background: rgba(48, 48, 48, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.responsive {
+    width: 100%;
+  height: auto;
+
+}
+  
+.pop-up-wrap{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 950px;
+    transform: scale(0.6);
+    opacity: 0;
+    transition: .3s ease all;
+}
+
+#close{
+    position: absolute;
+    top: 70%;
+    right: auto;
+    font-size: 40px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.pop-up.show{
+    visibility: visible;
+	position:absolute;
+
+  z-index: 1;
+}
+
+.pop-up-wrap.show{
+    transform: scale(1);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 980px){
+    .pop-up-title{
+        display: none;
+    }
+
+}
+
+
+
+.bo{
+	background: black;
+}
+.mb-3{
+	color: hsl(305, 100%, 50%);
+}
+
+.more{
+	background: #16ffd8;
+	color: rgb(255, 255, 255);
+}
+
+.post-content{
+	color: #16ffd8;
+}
+
+.fuente{
+	color: #354054;
+}
+
+
+.navbar .navbar-brand{
+	font-size: 1.6rem;
+	color: #3f4954;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+	font-family: 'Abel', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+nav > ul > li:nth-child(n) > a{
+	padding: .3rem;
+}
+nav > ul > li:nth-child(n) > a > i{
+	font-size: 1.3rem;
+	color: #354054;
+}
+nav > ul > li:nth-child(n) > a > i:hover{
+	color: #308CFD;
+}
+/*=== x ====== End Navigation (Navbar) Styling ====== x ===*/
+
+/*======= Start Main Page (Topbar) Heading =========*/
+.topbar-content{
+	background: url(img/header-img.jpg), no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+	padding-top: 6rem;
+}
+
+.topbar-content h1 {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1;
+	color: #fff;
+}
+.post-info{
+	background: lawngreen;
+	color: indianred;
+}
+
+.topbar-content h3{
+	font-family: 'Abel', sans-serif;
+	font-weight: 600;
+}
+/*=== x =========== End Main Page (Topbar) Heading ========== x ===*/
+
+/*======== Start Carousel Post (Slider Card) Styling ===========*/
+#carousel{
+	margin: 0px;}
+#carousel h4{
+	font-family: 'Anton', sans-serif;
+	font-size: 1.1rem;
+}
+#carousel .carousel-item{
+	transition: transform 1.5s ease;
+}
+#carousel .carousel-item article{
+	box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+	margin-bottom: 2px;
+	overflow: hidden;
+}
+#carousel .carousel-item article:hover img{
+	transform: scale(1.1);
+}
+#carousel .carousel-item article .post-info{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	font-size: .6rem;
+}
+#carousel .carousel-item article p{
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: .9rem;
+	color: rgba(0,0,0,.5);
+	margin-bottom: .3rem;
+}
+#carousel .carousel-button a{
+	color: rgb(49,198,254);
+	font-size: 2rem;
+}
+#carousel .carousel-button a:hover{
+	color: #0340D4;
+}
+#carousel .carousel-indicators{
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	bottom: -1px;
+}
+#carousel .carousel-indicators li{
+	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    width: 18px;
+    height: 24px;
+    border-radius: 50%;
+    text-indent: 0;
+    padding: 4px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 1px;
+}
+/*=== x =========== End Carousel Post (Slider Card) Styling ========== x ===*/
+
+/*========== Start Blog Post/Main Post Content Section Styling ===========*/
+.main-content .post .post-img{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 6px;
+}
+.main-content .post .post-img img{
+	border-radius: 20px;
+}
+.main-content .post .post-img img:hover{
+	transform: scale(1.2);
+}
+.main-content .post .post-info{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-radius: 4rem;
+	margin-top: -28px;
+	font-weight: 500;
+}
+.main-content .post h2 a{
+	font-family: 'Anton', sans-serif;
+	font-size: 1.3rem;
+	color:wheat;
+}
+.main-content .pages a{
+	text-decoration: none;
+	margin: 0 0.3rem;
+	color: #fff;
+}
+.main-content .pages a.icon{
+	background-color: #263238;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+.main-content .pages a.page{
+	background-color: #263238;
+    padding: 6px 12px;
+    border-radius: 50%;
+}
+
+/*=========== Start Sidebar Content Styling ==============*/
+
+.sidebar .category-list a{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	width: 100%;
+	margin: 10px;
+	padding: 8px 15px;
+	border-radius: 5rem;
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+	font-weight: 500;
+	color: #070E16;
+}
+.sidebar .popular-post figure{
+	overflow: hidden;
+}
+.sidebar .popular-post figure img:hover{
+	transform: scale(1.1);
+}
+.sidebar .popular-post figure{
+	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	padding: 5px;
+	border-radius: 8px;
+}
+.sidebar .popular-post figure figcaption{
+	color: #080F16;
+	margin-top: 8px;
+}
+.sidebar .popular-post h5 a{
+	font-family: 'Anton', sans-serif;
+	color: #263238;
+}
+.sidebar .get-in-touch{
+	box-sizing: content-box;
+}
+.sidebar .get-in-touch input{
+	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	height: calc(1.6em + 0.88rem + 3px);
+	border-radius: 50px;
+	padding: 0 10px;
+	outline: none;
+}
+.sidebar .get-in-touch textarea{
+	background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+	border-radius: 10px;
+	outline: none;
+	padding: 10px;
+}
+.sidebar .popular-tags a{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 8px 15px;
+	border-radius: 5rem;
+	line-height: 2.5;
+	text-decoration: none;
+	font-weight: 500;
+	color: #070E16;
+}
+/*==== x ====== End Blog Post/Main Post Content Section Styling ==== x ===*/
+
+
+/*======================== Start Media Queries ========================*/
+
+/* Device Under 768px (lg) */
+@media (max-width: 767.98px) {
+	.navbar{
+		background: #fff;
+	}
+}
+/* (Mobile Device Pixel Ratio - 2) (192dpi) */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.main-content .post .post-info{
+		font-size: .6rem;
+	}
+	#footer-navigation a{
+		margin: .2rem;
+	}
+}
+
+
+
+
+
+
+
+/** Skew **/
+.skew-abajo{
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	border-width: 0 0 10vh 100vw;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+}
+.skew-arriba{
+    position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 10vh 100vw 0 0;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	z-index: 10;
+}
+
+.vermas{
+	background: black;
+	color: white;
+}
+
+.vermas.li {
+	color: red;
+}

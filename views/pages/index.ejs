@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cronista</title>
+	<%- include('../partials/head'); %>
+  <title>Inicio</title>
+
+</head>
+<body style="background:#120907;">
+	
+	
+
+
+	<%- include('../partials/NavBar'); %>
+
+  <%- include('../partials/popup'); %>
+
+
+   
+
+ 
+
+
+
+	<section class="main-content mb-5"><!-- -------- Start Blog Post/Main Post Content Section -------- -->
+		<div class="container">
+		
+			<div class="row"><!-- ------------- Start Blog Post/Main Post Row ----------- -->
+			
+				<div class="col-lg-8"><!-- --------------- Main Post (Left Content/Article Post) ------------------ -->
+				
+
+
+					
+
+
+
+					<%- include('../article/champions'); %>
+					<br>
+
+				
+					<%- include('../article/julian-alvarez-river'); %>
+					<br>
+				
+					<%- include('../article/alberto-fer'); %>
+					<br>
+
+					<%- include('../article/medica-ile'); %>
+					<br>
+
+					<%- include('../article/spot-moes'); %>
+					<br>
+
+					<%- include('../article/wichi-pacara'); %>
+
+
+					<%- include('../article/cr7-united'); %>
+
+
+					
+
+					<%- include('../article/spot-roberi'); %>
+
+
+
+					<%- include('../article/spot-chc'); %>
+
+
+	 				
+					
+
+
+				</div><!-- x ---------- End Main Post (Left Content/Article Post) ---------- x -->
+				
+				<div class="col-lg-4 d-none d-lg-block"><!-- Start Right Content (Sidebar Post) -->
+					<!--aside-->
+					<aside class="sidebar">
+					
+				
+						
+						<div class="popular-post my-5"><!-- ------------- Sidebar Popular Post ----------- -->
+							<h2 class="font-weight-bold text-light my-3">apoyan </h2>
+							
+							
+							<article class="my-5"><!-- ------------------ Sidebar Article ----------------- -->
+								<figure>
+									<img src="assets/img/article/moes.jpg" alt="" class="w-100" />
+                  <img class="w-100 img-fluid" src="assets/img/article/chc.jpg" alt="">
+
+				  <article class="my-5"><!-- ------------------ Sidebar Article ----------------- -->
+					<figure>
+						<img src="assets/img/article/moes.jpg" alt="" class="w-100" />
+	  					<img class="w-100 img-fluid" src="assets/img/article/chc.jpg" alt="">
+
+						
+							
+						</div><!-- x ------------ End Sidebar Popular Post (Sidebar Article) -------------- x -->
+						
+						<article class="my-5"><!-- ------------------ Sidebar Article ----------------- -->
+							<figure>
+								<img src="assets/img/article/salta1.jpg" alt="" class="w-100" />
+								  <img class="w-100 img-fluid" src="assets/img/article/moes.jpg" alt="">
+		
+								
+									
+								</div><!-- x ------------ End Sidebar Popular Post (Sidebar Article) -------------- x -->
+								
+					
+					</aside>
+					
+				</div><!-- x ---------------- Start Right Content (Sidebar Post) ------------------ x -->
+				
+			</div><!-- x --------------- End Blog Post/Main Post Row ----------------- x -->
+		
+	  </div><!-- x --- End Main Post Section Container DIV ----- x -->
+	</section><!-- x ------------------- End Blog Post/Main Post Content Section -------------------- x -->
+	
+  
+  <footer><%- include('../partials/footer'); %></footer>
+
+	
+	<!-- jQuery Library  --> <!-- ------------------------- Start Script Files ----------------- -->
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Proper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<!-- Bootstrap Minified JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	<!-- Font Awesome Script Link -->
+	<script src="https://kit.fontawesome.com/ef16f745ed.js" crossorigin="anonymous"></script>
+	<!-- Custom JavaScript -->
+	<script>
+
+		
+	
+		// Navigation (Navbar) Sticky Script
+
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if(this.scrollY > 20){
+					$('.navbar').addClass("sticky");
+				}else{
+					$('.navbar').removeClass("sticky");
+				}
+			})
+		});
+	
+	</script>
+	
+	<!-- x --------------------------- End Script Files -------------------------- x -->
+
+<script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+</body>
+</html>
